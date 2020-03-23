@@ -59,7 +59,7 @@ public class PrimaryConfig {
         properties.put("hibernate.dialect",
                 "org.hibernate.dialect.SQLServerDialect");
         properties.put("hibernate.ddl-auto",
-                "create");
+                "update");
         properties.put("hibernate.physical_naming_strategy",
                 "org.springframework.boot.orm.jpa.hibernate.SpringPhysicalNamingStrategy");
         properties.put("hibernate.implicit_naming_strategy",

@@ -50,8 +50,8 @@ public class BaseEntity  implements Serializable {
     @DateTimeFormat(pattern = "yyyy-MM-dd HH:mm:ss")
     private Date updateTime;
 
-    private Integer status = CommonConstant.STATUS_NORMAL;
+    private int status = CommonConstant.STATUS_NORMAL;
 
-    private Integer delFlag = CommonConstant.STATUS_NORMAL;
+    private int delFlag = CommonConstant.STATUS_NORMAL;
 
 }

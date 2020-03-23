@@ -10,4 +10,6 @@ import org.springframework.data.jpa.repository.JpaSpecificationExecutor;
  * @Version 1.0
  */
 public interface UserRepository extends JpaRepository<SystemUser, String>, JpaSpecificationExecutor<SystemUser> {
+
+    SystemUser findByUsernameAndPassword(String username,String password);
 }

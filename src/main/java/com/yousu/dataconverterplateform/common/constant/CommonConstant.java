@@ -15,7 +15,11 @@ public interface CommonConstant {
     /**
      * 正常状态
      */
-    Integer STATUS_NORMAL = 0;
+    int STATUS_NORMAL = 0;
+
+    int TASK_OPEN = 1;
+
+    int TASK_NO_OPEN = 0;
 
 
 }
