@@ -93,4 +93,9 @@ public class InterfaceInformationServiceImpl implements InterfaceInformationServ
     public List<InterfaceInformation> findAllByWhetherOpen(int whetherOpen) {
         return interfaceInformationRepository.findAllByWhetherOpen(whetherOpen);
     }
+
+    @Override
+    public InterfaceInformation getOne(String id) {
+        return interfaceInformationRepository.getOne(id);
+    }
 }

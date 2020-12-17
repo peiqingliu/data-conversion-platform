@@ -1,6 +1,5 @@
 package com.yousu.dataconverterplateform.module.primary.entity;
 
-import com.yousu.dataconverterplateform.common.util.SnowFlakeUtil;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.ToString;
@@ -24,9 +23,6 @@ import java.io.Serializable;
 @Table(name = "person")
 public class Person implements Serializable {
 
-    @Id
-    private String id = String.valueOf(SnowFlakeUtil.getFlowIdInstance().nextId());
-
-    private String name;
-    private int age;
+   @Id
+   private String VAA15;
 }

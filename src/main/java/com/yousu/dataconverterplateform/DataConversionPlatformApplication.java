@@ -6,6 +6,7 @@ import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.jpa.repository.config.EnableJpaAuditing;
 import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 
 // 启用JPA审计
@@ -17,6 +18,7 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 // 启用自带定时任务
 @EnableScheduling
 @SpringBootApplication
+@EnableTransactionManagement
 public class DataConversionPlatformApplication {
 
     public static void main(String[] args) {

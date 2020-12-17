@@ -27,11 +27,11 @@ spring:
     generate-ddl: true
   datasource: #database
     primary:  # 1.0 Datasource
-      jdbc-url: jdbc:sqlserver://127.0.0.1:1433;DatabaseName=mywork
+      jdbc-url: jdbc:sqlserver://10.10.113.188:1433;DatabaseName=mywork
       driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
       type: com.zaxxer.hikari.HikariDataSource
-      username: sa
-      password: 123456
+      username: ceshi
+      password: ceshi
     secondary:  # 2.0 Datasource
       jdbc-url: jdbc:postgresql://127.0.0.1:5432/dataconverterplateform
       driverClassName: org.postgresql.Driver
@@ -39,16 +39,16 @@ spring:
       username: postgres
       password: 123456
     oracle:  # 3.0 Datasource
-      jdbc-url: jdbc:oracle:thin:@112.126.61.132:1522:ORCL
+      jdbc-url: jdbc:oracle:thin:@127.0.0.1:1521:xe
       driver-class-name: oracle.jdbc.driver.OracleDriver
       type: com.zaxxer.hikari.HikariDataSource
-      username: ZTEMED
-      password: 123456
+      username: test
+      password: TEST123
     hikari:
       maximum-pool-size: 100
       #connection-test-query: SELECT 1 FROM DUAL
       connection-timeout: 30000
-      max-lifetime: 30000
+      max-lifetime: 1800000
       minimum-idle: 5
 yousu:
   posturl: https://59.211.204.9:19437/BasWebService.asmx?WSDL

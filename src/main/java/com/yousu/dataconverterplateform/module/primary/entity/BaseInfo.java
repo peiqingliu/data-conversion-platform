@@ -1,14 +1,11 @@
 package com.yousu.dataconverterplateform.module.primary.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.fasterxml.jackson.databind.PropertyNamingStrategy;
-import com.fasterxml.jackson.databind.annotation.JsonNaming;
-import lombok.AllArgsConstructor;
+import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.springframework.format.annotation.DateTimeFormat;
 
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Date;
 /**
@@ -18,9 +15,7 @@ import java.util.Date;
  */
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-@JsonNaming(PropertyNamingStrategy.SnakeCaseStrategy.class) //返回xml格式时非必须，此注解是转json的蛇形命名用的
-@XmlRootElement(name = "Cas") // 定义xml根节点
+@JacksonXmlRootElement
 public class BaseInfo implements Serializable {
 
     /**

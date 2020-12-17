@@ -41,7 +41,7 @@ public class InterfaceInformation extends BaseEntity {
     /**
      * 接口执行sql
      */
-    private String interfaceParameters;
+    private String prepareExecuteSql;
 
     /**
      * 位置索引
@@ -57,4 +57,30 @@ public class InterfaceInformation extends BaseEntity {
      * 是否开启定时任务 0表示不开启,1开启
      */
     private int whetherOpen = CommonConstant.TASK_NO_OPEN;
+
+    /**
+     * 数据模型
+     */
+    private String dataModel;
+
+    /**
+     * 请求头
+     */
+    private String requestHeader;
+
+    /**
+     * 接口的soapAction
+     */
+    private String soapAction;
+
+    /**
+     * 是否是多个数据一起传输
+     */
+    private int multiple = CommonConstant.IS_MULTIPLE;
+
+    /**
+     * 查询时间
+     */
+    private int searchTime = CommonConstant.DEFAULT_VALUE;
+
 }

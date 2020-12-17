@@ -21,5 +21,9 @@ public interface CommonConstant {
 
     int TASK_NO_OPEN = 0;
 
+    int IS_MULTIPLE = 0;
+
+    int DEFAULT_VALUE = 0;
+
 
 }

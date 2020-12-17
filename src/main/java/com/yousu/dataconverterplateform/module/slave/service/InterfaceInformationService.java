@@ -30,4 +30,6 @@ public interface InterfaceInformationService {
     void delete(String id);
 
     List<InterfaceInformation> findAllByWhetherOpen(int whetherOpen);
+
+    InterfaceInformation getOne(String id);
 }
