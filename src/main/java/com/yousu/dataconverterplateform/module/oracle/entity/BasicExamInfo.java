@@ -1,6 +1,13 @@
 package com.yousu.dataconverterplateform.module.oracle.entity;
 
+import lombok.Data;
+import lombok.EqualsAndHashCode;
+import lombok.ToString;
+import lombok.extern.slf4j.Slf4j;
+
+import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 
@@ -12,6 +19,12 @@ import java.util.Date;
  * @Software IntelliJ IDEA
  * @description todo
  */
+@Slf4j
+@Data
+@EqualsAndHashCode(callSuper = false)
+@ToString
+@Entity
+@Table(name = "BASIC_EXAM_INFO")
 public class BasicExamInfo {
 
     @NotEmpty
